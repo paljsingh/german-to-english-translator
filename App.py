@@ -86,7 +86,7 @@ class G2ETranslator(QMainWindow):
         )
         if not file_path:
             return
-        fh = open(file_path, 'r')
+        fh = open(file_path, 'r', encoding='utf-8')
         if language_code == 'de':
             # close any previously opened file handle
             if self.de_fh:
